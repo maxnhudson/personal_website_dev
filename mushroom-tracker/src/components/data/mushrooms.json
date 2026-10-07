@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Shiitake Mushroom",
+        "image": "https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=300&h=200&fit=crop",
+        "description": "A popular edible mushroom with a rich, savory flavor."
+    },
+    {
+        "id": 2,
+        "title": "Portobello Mushroom",
+        "image": "https://images.unsplash.com/photo-1580462380968-6daa9c33ccf3?w=300&h=200&fit=crop",
+        "description": "Large, meaty mushrooms perfect for grilling."
+    },
+    {
+        "id": 3,
+        "title": "Oyster Mushroom",
+        "image": "https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=300&h=200&fit=crop",
+        "description": "Delicate mushrooms with a subtle seafood flavor."
+    },
+    {
+        "id": 4,
+        "title": "Chanterelle",
+        "image": "https://images.unsplash.com/photo-1548142423-e2c3ba2aff48?w=300&h=200&fit=crop",
+        "description": "Golden-colored wild mushrooms with a fruity aroma."
+    },
+    {
+        "id": 5,
+        "title": "Porcini Mushroom",
+        "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=300&h=200&fit=crop",
+        "description": "Premium mushrooms with a nutty, earthy flavor."
+    },
+    {
+        "id": 6,
+        "title": "Enoki Mushroom",
+        "image": "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=300&h=200&fit=crop",
+        "description": "Thin, white mushrooms with a mild flavor and crunchy texture."
+    },
+    {
+        "id": 7,
+        "title": "Maitake Mushroom",
+        "image": "https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=300&h=200&fit=crop",
+        "description": "Also known as 'Hen of the Woods', with a rich umami flavor."
+    },
+    {
+        "id": 8,
+        "title": "Crimini Mushroom",
+        "image": "https://images.unsplash.com/photo-1555236765-e87c6822e04b?w=300&h=200&fit=crop",
+        "description": "Baby bella mushrooms with a deeper flavor than white mushrooms."
+    }
+]
