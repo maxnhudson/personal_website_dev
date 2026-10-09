@@ -11,13 +11,12 @@
       </div>
       <div id="navbar-menu" class="navbar-menu">
           <a class="navbar-item" href="#hero">Home</a>
-          <a class="navbar-item" href="#about">About</a>
-          <a class="navbar-item" href="#skills">Skills</a>
-          <a class="navbar-item" href="#projects">Projects</a>
-          <a class="navbar-item" href="#contact">Contact</a>
+          <a class="navbar-item" v-for="section in sections" :key="section.id" :href="`#${section.id}`">
+            {{ section.label }}
+          </a>
       </div>
       <div class ="navbar-end">
-        <a class="navbar-item" href=".\assets\MHudson_Resume_FS.pdf" download="MHudson_Resume_FS">
+        <a class="navbar-item" :href="resumeUrl" download="MHudson_Resume_091526">
           <span class="icon-text">
             <span class="icon">
               <i class="fas fa-download"></i>
@@ -32,8 +31,17 @@
 </template>
 
 <script>
+import sections from '@/sections';
+
 export default {
   name: 'App',
+  data() {
+    return {
+      sections,
+      // Served from public/, copied to the site root as-is
+      resumeUrl: `${process.env.BASE_URL}MHudson_Resume_091526.pdf`
+    }
+  },
   mounted() {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);

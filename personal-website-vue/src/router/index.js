@@ -8,12 +8,11 @@ const routes = [
     component: HomeView
   },
   {
+    // The About content lives on the home page as a section, so send old
+    // links to the anchor instead of a separate page.
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    redirect: { path: '/', hash: '#about' }
   }
 ]
 

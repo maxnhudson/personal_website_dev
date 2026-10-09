@@ -1,24 +1,34 @@
 <template>
-  <section id="skills" class="section">
-    <div class="container">
-      <h1 class="title">Skills</h1>
-      <div class="grid">
-        <div class="cell" v-for="(skill, index) in skills" :key="index">
-          <div class="card">
-            <div class="card-content">
-              <p class="title is-5">{{ skill }}</p>
-            </div>
+  <Section :id="id" :title="title">
+    <div class="grid">
+      <div class="cell" v-for="(skill, index) in skills" :key="index">
+        <div class="card">
+          <div class="card-content">
+            <p class="title is-5">{{ skill }}</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </Section>
 </template>
 
 <script>
+import Section from '@/components/Section.vue';
+
 export default {
-  name: 'SkillSection',
+  name: 'SkillsSection',
+  components: {
+    Section
+  },
   props: {
+    id: {
+      type: String,
+      default: 'skills'
+    },
+    title: {
+      type: String,
+      default: 'Skills'
+    },
     skills: {
       type: Array,
       default: () => [

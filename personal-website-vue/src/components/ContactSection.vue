@@ -1,9 +1,26 @@
-
 <template>
-    <section id="contact" class="section">
-      <div class="container">
-        <h1 class="title">Contact</h1>
-        <p>Get in touch.</p>
-      </div>
-    </section>
+  <Section :id="id" :title="title">
+    <p>Get in touch.</p>
+  </Section>
 </template>
+
+<script>
+import Section from '@/components/Section.vue';
+
+export default {
+  name: 'ContactSection',
+  components: {
+    Section
+  },
+  props: {
+    id: {
+      type: String,
+      default: 'contact'
+    },
+    title: {
+      type: String,
+      default: 'Contact'
+    }
+  }
+}
+</script>

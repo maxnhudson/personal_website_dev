@@ -2,31 +2,29 @@
   <div class="home">
     <section id="hero" class="hero is-primary">
       <div class="hero-body">
-        
+
       </div>
     </section>
 
-    <AboutSection id="about" />
-    <SkillSection id="skills"/>
-    <Projects id="projects" />
-    <!-- <ContactSection id="contact"/> -->
-
+    <component
+      v-for="section in sections"
+      :key="section.id"
+      :is="section.component"
+      :id="section.id"
+      :title="section.title"
+    />
   </div>
 </template>
 
 <script>
-import AboutSection from '@/components/AboutSection.vue';
-import SkillSection from '@/components/SkillSection.vue';
-import Projects from '@/components/Projects.vue';
-import ContactSection from '@/components/ContactSection.vue';
+import sections from '@/sections';
 
 export default {
   name: 'HomeView',
-  components: {
-    AboutSection,
-    SkillSection,
-    Projects,
-    ContactSection
+  data() {
+    return {
+      sections
+    }
   }
 }
 </script>
