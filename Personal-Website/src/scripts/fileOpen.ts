@@ -1,4 +1,4 @@
-export async function loadTextFile(path) {
+export async function loadFile(path, ft) {
   try {
     const response = await fetch(path);
     const text = await response.text();

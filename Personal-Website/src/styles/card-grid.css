@@ -1,0 +1,52 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+#projectSlot{
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card-list-item{
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  padding: .25rem;
+  border-radius: 5px;
+}
+
+.card-container {
+    display: block;          /* Forces the link to behave like a div box */
+    border-radius: 8px;
+    text-decoration: none;   /* Removes the default link underline */
+    color: var(--text);             /* Sets normal text color instead of blue */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: var(--accent);
+}
+

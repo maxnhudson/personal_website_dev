@@ -1,0 +1,29 @@
+.navbar{
+  position: sticky;
+  top:0;
+  background: var(--bg);
+  z-index: 1000;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Aligns list items horizontally */
+  justify-content: space-evenly;
+}
+
+/* Style the individual links */
+.navbar a {
+  display: block;
+  color: var(--text);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none; /* Removes the underline */
+  transition: background-color 0.3s;
+}
+
+/* Add a hover effect */
+.navbar a:hover {
+  background-color: var(--accent);
+}
+
