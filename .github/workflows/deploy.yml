@@ -35,7 +35,7 @@ jobs:
         working-directory: mushroom-tracker
         run: npm ci && npm run build
 
-      - name: Build Webpage
+      - name: Build Vue app
         working-directory: Personal-Website
         run: npm ci && npm run build
         env:
@@ -44,6 +44,9 @@ jobs:
           PUBLIC_PATH: ${{ vars.PUBLIC_PATH }}
 
       - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: Personal-Website/dist
 
   deploy:
     needs: build
