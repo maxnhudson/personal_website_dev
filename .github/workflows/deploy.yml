@@ -27,7 +27,7 @@ jobs:
           cache: npm
           cache-dependency-path: |
             mushroom-tracker/package-lock.json
-            personal-website/package-lock.json
+            Personal-Website/package-lock.json
 
       # Build the tracker into the Vue public folder first, so the Vue build
       # picks it up and copies it into dist
@@ -36,7 +36,7 @@ jobs:
         run: npm ci && npm run build
 
       - name: Build Webpage
-        working-directory: personal-website
+        working-directory: Personal-Website
         run: npm ci && npm run build
         env:
           # Set to /<repo-name>/ when deploying this repo's own Pages site.
