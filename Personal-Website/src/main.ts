@@ -2,7 +2,7 @@ import.meta.glob("./styles/*.css", { eager: true });
 import img from "./assets/Profile Picture 1-7-26 smaller.png";
 import { loadFile, skillMap, projectMap } from "./scripts/index.ts";
 
-const about = await loadFile("../data/about.txt");
+const about = await loadFile("./about.txt");
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 <nav class = "navbar">
