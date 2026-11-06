@@ -9,12 +9,19 @@
   margin: 0;
   padding: 0;
   display: flex; /* Aligns list items horizontally */
-  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+/* Stretch each nav item to fill the width equally */
+.navbar li {
+  flex: 1;
+  text-align: center;
 }
 
 /* Style the individual links */
 .navbar a {
   display: block;
+  width: 100%;
   color: var(--text);
   text-align: center;
   padding: 14px 20px;
@@ -25,5 +32,6 @@
 /* Add a hover effect */
 .navbar a:hover {
   background-color: var(--accent);
+  color: var(--text-h);
 }
 

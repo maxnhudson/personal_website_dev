@@ -24,7 +24,7 @@ const projects: project[] = [
   {
     title: "Personal Website",
     description:
-      "This site, built with Vue 3 and Vite. A personal portfolio with about, skills, and projects sections, deployed to GitHub Pages.",
+      "This site, built with TypeScript and Vite. A personal portfolio with about, skills, and projects sections, deployed to GitHub Pages.",
     url: "https://github.com/maxnhudson/personal_website_dev",
     technologies: ["Vite", "TypeScript", "CSS"],
   },
