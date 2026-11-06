@@ -1,11 +1,8 @@
 import.meta.glob("./styles/*.css", { eager: true });
 import img from "./assets/Profile Picture 1-7-26 smaller.png";
-import projects from "../data/projects.ts";
-import skillGroups from "../data/skills.ts";
 import { loadFile, skillMap, projectMap } from "./scripts/index.ts";
 
-const about = await loadFile("../data/about.txt", "txt");
-console.log(projects);
+const about = await loadFile("../data/about.txt");
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 <nav class = "navbar">
@@ -41,8 +38,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 </section>
 `;
 
-const listContainer = document.getElementById("projectSlot") as HTMLUListElement | null;
-projectMap(listContainer, projects);
+const listContainer = document.getElementById("projectSlot") as HTMLUListElement;
+projectMap(listContainer);
 
-const listContainer2 = document.getElementById("skillSlot") as HTMLUListElement | null;
-skillMap(listContainer2, skillGroups);
+const listContainer2 = document.getElementById("skillSlot") as HTMLUListElement;
+skillMap(listContainer2);

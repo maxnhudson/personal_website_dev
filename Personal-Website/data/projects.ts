@@ -6,14 +6,14 @@
 // site is deployed at the domain root or under a subpath like
 // /personal_website_dev/.
 
-interface projects {
+interface project {
   title: string;
   description: string;
   url: string;
   technologies: string[];
 }
 
-const projects = [
+const projects: project[] = [
   {
     title: "Mushroom Tracker",
     description:

@@ -1,4 +1,6 @@
-export function skillMap(listContainer, skillGroups) {
+import skillGroups from "../../data/skills.ts";
+
+export function skillMap(listContainer: HTMLUListElement) {
   if (listContainer) {
     skillGroups.forEach((item) => {
       const div = document.createElement("div");

@@ -1,4 +1,6 @@
-export function projectMap(listContainer, projects) {
+import projects from "../../data/projects.ts";
+
+export function projectMap(listContainer: HTMLUListElement) {
   if (listContainer) {
     projects.forEach((item) => {
       const div = document.createElement("div");
