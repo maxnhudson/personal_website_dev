@@ -26,7 +26,7 @@ const projects = [
     description:
       "This site, built with Vue 3 and Vite. A personal portfolio with about, skills, and projects sections, deployed to GitHub Pages.",
     url: "https://github.com/maxnhudson/personal_website_dev",
-    technologies: ["Vue 3", "Vite", "JavaScript", "CSS"],
+    technologies: ["Vite", "TypeScript", "CSS"],
   },
 ];
 
